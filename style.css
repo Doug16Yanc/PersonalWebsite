@@ -117,11 +117,11 @@ header #menu-icons {
 
 section{
     min-height: 100vh;
-    padding: 0rem 0% 5rem;
-    display: flex;
+    padding: 5rem 0 5rem;
 }
 
 .home {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
@@ -179,9 +179,8 @@ section .home .home-img img {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: 0.2rem solid var(--main-color);
     font-size: 3rem;
-    border-radius: 60%;
+    border-radius: 50%;
     color: var(--main-color);
     margin: 3rem 1.6rem 3rem 0;
     transition: 0.3s ease;
@@ -212,4 +211,142 @@ section .home .home-img img {
     background-color: var(--main-color);
     color: var(--text-color);
     box-shadow: 0 0 25px var(--main-color);
+}
+
+.home .home-content .typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 300px;
+}
+
+.home .home-content .typing-text span{
+    position: relative;
+}
+
+.home .home-content .typing-text span::before{
+    content: "Software Developer";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.home .home-content .typing-text span::after{
+    position: absolute;
+    content: "";
+    background: var(--bg-color);
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -7;
+    animation: cursor 6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    0%, 20% {
+        content: 'Java';
+    }
+    21%, 40% {
+        content: 'Kotlin';
+    }
+    41%, 60% {
+        content: 'Python';
+    }
+    61%, 80% {
+        content: 'SQL';
+    }
+    81%, 100%{
+        content: 'Solidity';
+    }
+}
+
+@keyframes typing {
+    10%, 15%,
+    30%, 35%,
+    50%, 55%,
+    70%, 75%,
+    90%, 95% {
+        width: 0;
+    }
+    5%, 20%,
+    25%, 40%,
+    45%, 60%,
+    65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+@media (max-width:1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media (max-width:995px){
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3 {
+        font-size: 3rem;
+    }
+    .home .home-content h1 {
+        font-size: 6rem;
+    }
+    .home .home-content home-img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+.services {
+    background: var(--bg-color);
+}
+
+.services .heading {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.services .services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: left;
+    gap: 3rem;
+}
+
+.services .services-container .services-box {
+    background-color: var(--second-bg-color);
+    height: 300px;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.services .services-container .services-box:hover {
+    background: white;
+    color: var(--main-color);
+    transform: scale(1.04);
+}
+
+.services .services-container .services-box .services-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: center;
+    align-items: baseline;
+    padding: 5rem;
+}
+
+.services .services-container .services-box .services-info h4{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.services .services-container .services-box .services-info p{
+    font-size: 1.9rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin: auto;
 }
