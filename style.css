@@ -350,3 +350,80 @@ section .home .home-img img {
     max-height: 100px;
     margin: auto;
 }
+
+@media (max-width:991px){
+    section {
+        padding: 10rem 3% 3rem;
+    }
+    .services{
+        padding-bottom: 8rem;
+    }
+}
+
+@media (max-width:895px) {
+    .services h2 {
+        margin-bottom: 4rem;
+    }
+    .services-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.skills {
+    background: var(--bg-color);
+}
+
+.skills .container {
+    background: #041f97;
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding : 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.skills .heading {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap : 2rem;
+}
+
+.skills .container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 2rem;
+    background: #041f97;
+    box-shadow: 0 4px 10px var(--main-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.skills .container .bar:hover {
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.05);
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skills .container .bar .info img {
+    width: px;
+}
+
+.skills .container .bar .info span {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
