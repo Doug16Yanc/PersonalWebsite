@@ -691,17 +691,9 @@ section .home .home-img img {
 }
 
 .contact form .btn {
-    position: absolute;
-    margin-top: 30rem;
-    left: 850px;
+    margin-top: 5rem;
 }
 
-@media screen and (max-width:1285px) {
-    .contact form .btn {
-        position: absolute;
-        left: 300px;
-    }
-}
 
 /*Footer section*/
 
