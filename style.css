@@ -249,7 +249,7 @@ section .home .home-img img {
     right: -7;
     animation: cursor 6s infinite, typing 20s steps(14) infinite;
 }
-
+/*
 @keyframes cursor {
     0%, 20% {
         content: 'Java';
@@ -282,7 +282,8 @@ section .home .home-img img {
     65%, 80%, 85% {
         width: calc(100% + 8px);
     }
-}
+} 
+*/
 
 @media (max-width:1285px){
     .home{
