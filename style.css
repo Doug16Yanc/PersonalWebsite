@@ -504,6 +504,7 @@ section .home .home-img img {
 
 /*Education section*/
 
+
 .education {
     background: var(--bg-color);
 }
@@ -527,11 +528,11 @@ section .home .home-img img {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    z-index: 2px;
+    z-index: -2px;
 }
 
 .education .timeline .container {
-    padding: 10px 50px;
+    padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -547,7 +548,7 @@ section .home .home-img img {
     background-color: rgb(252, 252, 252);
     color: rgb(90, 60, 60);
     border: 5px solid var(--main-color);
-    top : 20px;
+    top : 15px;
     z-index: 100;
     border-radius: 50%;
     font-size: 2rem;
@@ -557,11 +558,11 @@ section .home .home-img img {
 }
 
 .education .timeline .left {
-    right: 0;
+    left: 0;
 }
 
 .education .timeline .right {
-    right: 50%;
+    left: 50%;
 }
 
 .education .timeline .left::before {
@@ -581,7 +582,7 @@ section .home .home-img img {
     content: '';
     height: 0;
     position: absolute;
-    top: 20px;
+    top: 22px;
     width: 0;
     z-index: 1;
     right: 30px;
@@ -591,7 +592,7 @@ section .home .home-img img {
 }
 
 .education .timeline .right::after {
-    left: -20px;
+    left: -17px;
 }
 
 .education .timeline .container .content {
@@ -621,12 +622,17 @@ section .home .home-img img {
     font-weight: 500;
 }
 
+/*
+
 @media screen and (max-width:1285px) {
     .education .timeline {
         margin-top: 2rem;
     }
     .education .timeline::after {
-        left:30px;
+        right: 30px;
+    }
+    .education .timeline::before {
+        left: 30px;
     }
     .education .timeline .container {
         width: 100%;
