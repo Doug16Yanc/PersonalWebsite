@@ -87,7 +87,7 @@ header #menu-icons {
     display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:1285px) {
     #menu-icons { 
         display: block;
     }
@@ -280,13 +280,14 @@ section .home .home-img img {
     }
 }
 
-@media (max-width:1000px){
+@media (max-width:1285px){
     .home{
         gap: 4rem;
     }
 }
 
-@media (max-width:900px){
+
+@media (max-width:1285px){
     .home {
         flex-direction: column;
         margin: 5rem 4rem;
@@ -300,6 +301,26 @@ section .home .home-img img {
     .home .home-content home-img {
         width: 30vw;
         margin-top: 4rem;
+        height: 300px;
+    }
+}
+
+@media (max-height:600px){
+    .home {
+        height: 300px;
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3 {
+        font-size: 3rem;
+    }
+    .home .home-content h1 {
+        font-size: 6rem;
+    }
+    .home .home-content home-img {
+        width: 30vw;
+        margin-top: 4rem;
+        height: 300px;
     }
 }
 
@@ -361,7 +382,7 @@ section .home .home-img img {
     margin: auto;
 }
 
-@media (max-width:991px){
+@media (max-width:1285px){
     section {
         padding: 10rem 3% 3rem;
     }
@@ -370,7 +391,7 @@ section .home .home-img img {
     }
 }
 
-@media (max-width:991px) {
+@media (max-width:1285px) {
     .services h2 {
         margin-bottom: 4rem;
     }
@@ -441,10 +462,11 @@ section .home .home-img img {
     margin-left: 1rem;
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:1285px) {
     .skills .container {
         margin : 0;
         padding: 0;
+        height: 900px;
     }
     .skills .container .row {
         grid-template-columns: repeat(2, 1fr);
@@ -577,7 +599,7 @@ section .home .home-img img {
     font-weight: 500;
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:1285px) {
     .education .timeline {
         margin-top: 2rem;
     }
@@ -650,7 +672,7 @@ section .home .home-img img {
     left: 850px;
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:1285px) {
     .contact form .btn {
         position: absolute;
         left: 300px;
@@ -730,7 +752,7 @@ section .home .home-img img {
     } */
 }
 
-@media(max-width:991px) {
+@media(max-width:1285px ) {
     .header {
         padding: 2rem 5%;;
     }
