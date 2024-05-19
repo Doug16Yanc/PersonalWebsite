@@ -286,7 +286,7 @@ section .home .home-img img {
     }
 }
 
-@media (max-width:600px){
+@media (max-width:900px){
     .home {
         flex-direction: column;
         margin: 5rem 4rem;
@@ -370,7 +370,7 @@ section .home .home-img img {
     }
 }
 
-@media (max-width:895px) {
+@media (max-width:991px) {
     .services h2 {
         margin-bottom: 4rem;
     }
@@ -441,7 +441,7 @@ section .home .home-img img {
     margin-left: 1rem;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:990px) {
     .skills .container {
         margin : 0;
         padding: 0;
@@ -577,7 +577,7 @@ section .home .home-img img {
     font-weight: 500;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:990px) {
     .education .timeline {
         margin-top: 2rem;
     }
@@ -645,7 +645,16 @@ section .home .home-img img {
 }
 
 .contact form .btn {
-    margin-top: 3rem;
+    position: absolute;
+    margin-top: 30rem;
+    left: 850px;
+}
+
+@media screen and (max-width:990px) {
+    .contact form .btn {
+        position: absolute;
+        left: 300px;
+    }
 }
 
 /*Footer section*/
