@@ -239,6 +239,8 @@ section .home .home-img img {
     animation: words 20s infinite;
 }
 
+/*
+
 .home .home-content .typing-text span::after{
     position: absolute;
     content: "";
